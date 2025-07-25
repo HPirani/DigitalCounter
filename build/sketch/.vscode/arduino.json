@@ -1,0 +1,9 @@
+#line 1 "H:\\Arduino\\projects\\DigitalCounter\\.vscode\\arduino.json"
+{
+    "sketch": "DigitalCounter.ino",
+    "output": "build",
+    "configuration": "cpu=atmega328old",
+    "board": "arduino:avr:nano",
+    "port": "COM3",
+    "programmer": "avrisp"
+}
