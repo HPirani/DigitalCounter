@@ -1,8 +1,8 @@
 {
     "sketch": "DigitalCounter.ino",
     "output": "build",
-    "configuration": "cpu=atmega328old",
-    "board": "arduino:avr:nano",
+    "configuration": "bootloader=uart0,eeprom=keep,baudrate=default,BOD=disabled,LTO=Os_flto,clock=8MHz_internal",
+    "board": "MiniCore:avr:8",
     "port": "COM3",
     "programmer": "avrisp"
 }

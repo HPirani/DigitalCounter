@@ -1,5 +1,5 @@
-H:\Arduino\projects\DigitalCounter\build\core\HardwareSerial1.cpp.o: \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\HardwareSerial1.cpp \
+H:\Arduino\projects\DigitalCounter\build\core\wiring_extras.cpp.o: \
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\wiring_extras.cpp \
  C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\Arduino.h \
  C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\binary.h \
  C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\WCharacter.h \
@@ -10,6 +10,4 @@ H:\Arduino\projects\DigitalCounter\build\core\HardwareSerial1.cpp.o: \
  C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\Printable.h \
  C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\USBAPI.h \
  C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\wiring_extras.h \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\variants\standard/pins_arduino.h \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\HardwareSerial_private.h \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\wiring_private.h
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\variants\standard/pins_arduino.h
