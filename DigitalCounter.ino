@@ -8,7 +8,7 @@
 **            With AVR Atmega8 ande proximity sensor(PR12_4DN,BRN10_30VDC,NPN    **
 ** Created in fri 1404/05/03 01:39 PM By Hosein Pirani                           **
 **                                                                               **
-** Modified In sat 1404/05/04 07:20 PM To 01:30 AM by me.                        **
+** Modified In sat 1404/05/04 07:20 PM To 10:40 PM by me.                        **
 ** :	                                           								 **
 ** TODO:                                                                         **
 ** TODO:                                                                         **
@@ -135,7 +135,7 @@ void loop()
     //
     // sensor Readings
     displayNumber();
-
+    saveDataToEEPROM();
 }
 
 //ISR functions
@@ -212,7 +212,7 @@ void DisplaySplash()
 
 void displayDigitOnSegment(int segNum,uint8_t num)
 {
-    // First we need Toi Shift out our number.
+    // First we need To Shift out our number.
     // and just need one time per draw.
     shiftOut(data, clock, LSBFIRST, digits[num]);
 
@@ -293,4 +293,15 @@ void zeroAllSegments()
     shiftOut(data, clock, LSBFIRST, digits[0]);
 
     delay(50); // A bit Delay.
+}
+
+void saveDataToEEPROM()
+{
+    //first, Check If count is Updated, To Prevent From EEPROM
+    // Save Count To EEPROM.
+    long prevdata =0;
+     EEPROM.get(eep_addr,prevdata);
+
+     if(count != prevdata)
+    EEPROM.put(eep_addr, count);
 }
