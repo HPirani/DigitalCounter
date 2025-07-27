@@ -1,2 +1,2 @@
 H:\Arduino\projects\DigitalCounter\build\core\hooks.c.o: \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\hooks.c
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\hooks.c

@@ -1,2 +1,2 @@
 H:\Arduino\projects\DigitalCounter\build\core\abi.cpp.o: \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\abi.cpp
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\abi.cpp
