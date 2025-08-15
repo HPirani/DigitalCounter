@@ -1,7 +1,6 @@
 H:\Arduino\projects\DigitalCounter\build\core\wiring_shift.c.o: \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\wiring_shift.c \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\wiring_private.h \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\Arduino.h \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\binary.h \
- C:\Users\Hosein\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\variants\eightanaloginputs/pins_arduino.h \
- c:\users\hosein\appdata\local\arduino15\packages\arduino\hardware\avr\1.8.6\variants\standard\pins_arduino.h
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\wiring_shift.c \
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\wiring_private.h \
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\Arduino.h \
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\cores\MCUdude_corefiles\binary.h \
+ C:\Users\Hosein\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.1\variants\standard/pins_arduino.h

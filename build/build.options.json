@@ -1,9 +1,9 @@
 {
   "additionalFiles": "..\\..\\..,..\\..\\..,..\\..",
   "builtInToolsFolders": "",
-  "compiler.optimization_flags": "",
+  "compiler.optimization_flags": "-Os",
   "customBuildProperties": "",
-  "fqbn": "arduino:avr:nano:cpu=atmega328old",
+  "fqbn": "MiniCore:avr:8:bootloader=uart0,eeprom=keep,baudrate=default,BOD=4v0,LTO=Os_flto,clock=8MHz_internal",
   "hardwareFolders": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages",
   "otherLibrariesFolders": "C:\\Users\\Hosein\\Documents\\Arduino\\libraries",
   "runtime.ide.version": "10607",

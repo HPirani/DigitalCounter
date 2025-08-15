@@ -19,7 +19,7 @@
 
 **                                                                               **
 
-** Modified In sat 1404/05/04 07:20 PM To 10:40 PM by me.                        **
+** Modified In fri 1404/05/24 06:00 PM To 70:40 PM by me.                        **
 
 ** :	                                           								 **
 
@@ -71,12 +71,15 @@ constexpr auto senseIn = 4;
 #endif */
 # 47 "H:\\Arduino\\projects\\DigitalCounter\\DigitalCounter.ino"
 //EEPROM
-constexpr auto eep_addr = 0;
+constexpr auto eep_addr = 10;
+//bool bisFreshStart = true;   // Prevent From Erasing EEPROM when PowerOn.
 
 volatile unsigned long count = 0;
-long prevCount = 0;
+//long prevCount = 0;
+
 unsigned long delayTime = 7; // delay time for display
 bool bisMicroDelay = false; // for micro delay, to prevent flickering on display.
+
 String strnum;
 
 //7Segment digits, for 74hc164
@@ -97,9 +100,9 @@ static const uint8_t digits[13] = {
 };
 
 // debug
-String input = "";
-long substringData = 0;
-long substringchar = 0;
+//String input = "";
+//long substringData = 0;
+//long substringchar = 0;
 
 volatile bool bisSensLow = false; // Sensor Pin Is LOW.
 //bool bisSensHigh = false; // Sensor pin Is High.
@@ -108,11 +111,9 @@ volatile bool bisSensLow = false; // Sensor Pin Is LOW.
 void setup()
 {
     //debug
-    Serial.begin(9600);
+   // Serial.begin(9600);
 
-    //ISR
-    attachInterrupt(((senseIn) == 2 ? 0 : ((senseIn) == 3 ? 1 : -1)), ReadSensor, 1);
-    attachInterrupt(((reset) == 2 ? 0 : ((reset) == 3 ? 1 : -1)), ResetCounter, 1);
+
 
     //74hc164
     pinMode(data, 0x1);
@@ -129,6 +130,10 @@ void setup()
 
     pinMode(reset,0x0);
 
+    // ISR
+    attachInterrupt(((senseIn) == 2 ? 0 : ((senseIn) == 3 ? 1 : -1)), ReadSensor, 1);
+    attachInterrupt(((reset) == 2 ? 0 : ((reset) == 3 ? 1 : -1)), ResetCounter, 1);
+
     // Turn Of All Segments
   // zeroAllSegments();
     digitalWrite(seg3, 0x1);
@@ -140,35 +145,56 @@ void setup()
 
     DisplaySplash();
 
-    //REad Saved Count From EEPROM
+    //Read Saved Count From EEPROM
     long i;
     EEPROM.get(eep_addr, i);
-    if(i > 0)
+    delay(1);
+    if (i > 0)
         count = i;
 }
 
 void loop()
 {
-    // debug
-    if (Serial.available())
+    //bisFreshStart = false;
+        // debug
+        /* if (Serial.available())
+
     {
+
         input = Serial.readStringUntil('\n');
+
         substringData = input.substring(0).toInt();
+
         substringchar = input.substring(2).toInt();
+
         delay(1);
+
         Serial.print("data:   ");
+
         Serial.print(substringData);
+
         Serial.print(" ,   ");
+
         Serial.println(substringchar);
+
         // if (substringData > 0)
+
         // {
 
+
+
         //}
+
        // displayDigitOnSegment(substringchar, substringData);
+
         count = substringData;
+
         // shiftOut(data, clock, LSBFIRST, digits[11]);
+
         //delay(5);
-    }
+
+    } */
+# 153 "H:\\Arduino\\projects\\DigitalCounter\\DigitalCounter.ino"
     //displayDigitOnSegment(substringchar, substringData);
     //
     // sensor Readings
@@ -180,6 +206,7 @@ void loop()
    // }
 
     saveDataToEEPROM();
+    ManuallyResetCounter();
 }
 // Adjust delay time based on count value
 void adjustDelayTime()
@@ -216,25 +243,45 @@ void ReadSensor()
     {
       if(bisSensLow)
       {
-          Serial.println("adding... ");
+         // Serial.println("adding... ");
           count++;
           bisSensLow = false;
       }
     }
     else
     {
-        Serial.println("setting to low... ");
+      //  Serial.println("setting to low... ");
         bisSensLow = true;
     }
 }
 
 void ResetCounter()
 {
-    Serial.println("reset eep... ");
-    for (unsigned int i = eep_addr; i < sizeof(long); ++i)
+  //  Serial.println("reset eep... ");
+  //if (!bisFreshStart)
+  //{
+      for (unsigned int i = eep_addr; i < sizeof(unsigned long); ++i)
+      {
+          EEPROM.write(i, 0);
+
+      }
+      count = 0;
+      //}
+}
+
+void ManuallyResetCounter()
+{
+    //  Serial.println("reset eep... ");
+    // if (!bisFreshStart)
+    //{
+    if((digitalRead(reset)) == 0x1)
+    {
+
+    for (unsigned int i = eep_addr; i < sizeof(unsigned long); ++i)
     {
         EEPROM.write(i, 0);
-        count = 0;
+    }
+    count = 0;
     }
 }
 
@@ -250,7 +297,7 @@ Serial.println(strnum);
 Serial.print("numLengh: ");
 
 Serial.println(numLengh); */
-# 224 "H:\\Arduino\\projects\\DigitalCounter\\DigitalCounter.ino"
+# 252 "H:\\Arduino\\projects\\DigitalCounter\\DigitalCounter.ino"
 for(int i = 0; i <= numLengh; ++i)
 {
     uint8_t number = strnum.substring(i,i + 1).toInt();
@@ -261,7 +308,7 @@ for(int i = 0; i <= numLengh; ++i)
     Serial.print("On Segment: ");
 
     Serial.println(i); */
-# 231 "H:\\Arduino\\projects\\DigitalCounter\\DigitalCounter.ino"
+# 259 "H:\\Arduino\\projects\\DigitalCounter\\DigitalCounter.ino"
     displayDigitOnSegment( i+1, number);
 }
 
@@ -274,7 +321,7 @@ void DisplaySplash()
 
 
     //Serial.print("drawing... ");
-    for (int i = 0; i < 260; ++i)
+    for (int i = 0; i < 100; ++i)
     {
         //delay(1);
         for (int j = 2; j < 5; ++j)
@@ -389,27 +436,39 @@ void displayDigitOnSegment(int segNum,uint8_t num)
 
 }
 
-void zeroAllSegments()
+/* void zeroAllSegments()
+
 {
-    digitalWrite(seg1, 0x0);
-    digitalWrite(seg2, 0x0);
-    digitalWrite(seg3, 0x0);
-    digitalWrite(seg4, 0x0);
-    digitalWrite(seg5, 0x0);
-    digitalWrite(seg6, 0x0);
+
+    digitalWrite(seg1, LOW);
+
+    digitalWrite(seg2, LOW);
+
+    digitalWrite(seg3, LOW);
+
+    digitalWrite(seg4, LOW);
+
+    digitalWrite(seg5, LOW);
+
+    digitalWrite(seg6, LOW);
+
     // clear Shift Register.
-    shiftOut(data, clock, 0, digits[0]);
+
+    shiftOut(data, clock, LSBFIRST, digits[0]);
+
+
 
     delay(10); // A bit Delay.
-}
 
+} */
+# 400 "H:\\Arduino\\projects\\DigitalCounter\\DigitalCounter.ino"
 void saveDataToEEPROM()
 {
-    //first, Check If count is Updated, To Prevent From EEPROM
+    //first, Check If count is Updated, To Prevent From EEPROM tiring.
     // Save Count To EEPROM.
-    long prevdata =0;
-     EEPROM.get(eep_addr,prevdata);
+   // long prevdata =0;
+     //EEPROM.get(eep_addr,prevdata);
 
-     if(count != prevdata)
+     //if(count != prevdata)
     EEPROM.put(eep_addr, count);
 }

@@ -8,7 +8,7 @@
 **            With AVR Atmega8 ande proximity sensor(PR12_4DN,BRN10_30VDC,NPN    **
 ** Created in fri 1404/05/03 01:39 PM By Hosein Pirani                           **
 **                                                                               **
-** Modified In sat 1404/05/04 07:20 PM To 10:40 PM by me.                        **
+** Modified In fri 1404/05/24 06:00 PM To 70:40 PM by me.                        **
 ** :	                                           								 **
 ** TODO:                                                                         **
 ** TODO:                                                                         **
@@ -45,12 +45,15 @@ constexpr auto senseIn = 4;
 #endif */
 
 //EEPROM
-constexpr auto eep_addr = 0;
+constexpr auto eep_addr = 10;
+//bool bisFreshStart = true;   // Prevent From Erasing EEPROM when PowerOn.
 
 volatile unsigned long count = 0;
-long prevCount = 0;
+//long prevCount = 0;
+
 unsigned long delayTime = 7; // delay time for display
 bool bisMicroDelay = false; // for micro delay, to prevent flickering on display.
+
 String strnum;
 
 //7Segment digits, for 74hc164
@@ -71,9 +74,9 @@ static const uint8_t digits[13] = {
 };
 
 // debug
-String input = "";
-long substringData = 0;
-long substringchar = 0;
+//String input = "";
+//long substringData = 0;
+//long substringchar = 0;
 
 volatile bool bisSensLow = false; // Sensor Pin Is LOW.
 //bool bisSensHigh = false; // Sensor pin Is High.
@@ -82,11 +85,9 @@ volatile bool bisSensLow = false; // Sensor Pin Is LOW.
 void setup()
 {
     //debug
-    Serial.begin(9600);
+   // Serial.begin(9600);
 
-    //ISR
-    attachInterrupt(digitalPinToInterrupt(senseIn), ReadSensor, CHANGE);
-    attachInterrupt(digitalPinToInterrupt(reset), ResetCounter, CHANGE);
+    
 
     //74hc164
     pinMode(data, OUTPUT);
@@ -103,6 +104,10 @@ void setup()
 
     pinMode(reset,INPUT);
 
+    // ISR
+    attachInterrupt(digitalPinToInterrupt(senseIn), ReadSensor, CHANGE);
+    attachInterrupt(digitalPinToInterrupt(reset), ResetCounter, CHANGE);
+
     // Turn Of All Segments
   // zeroAllSegments();
     digitalWrite(seg3, HIGH);
@@ -114,17 +119,19 @@ void setup()
 
     DisplaySplash();
 
-    //REad Saved Count From EEPROM
-    long i; 
+    //Read Saved Count From EEPROM
+    long i;
     EEPROM.get(eep_addr, i);
-    if(i > 0)
+    delay(1);
+    if (i > 0)
         count = i;
 }
 
 void loop()
 {
-    // debug
-    if (Serial.available())
+    //bisFreshStart = false;
+        // debug
+        /* if (Serial.available())
     {
         input = Serial.readStringUntil('\n');
         substringData = input.substring(0).toInt();
@@ -142,7 +149,7 @@ void loop()
         count = substringData;
         // shiftOut(data, clock, LSBFIRST, digits[11]);
         //delay(5);
-    }
+    } */
     //displayDigitOnSegment(substringchar, substringData);
     //
     // sensor Readings
@@ -154,6 +161,7 @@ void loop()
    // }
     
     saveDataToEEPROM();
+    ManuallyResetCounter();
 }
 // Adjust delay time based on count value
 void adjustDelayTime()
@@ -190,25 +198,45 @@ void ReadSensor()
     {
       if(bisSensLow)
       {
-          Serial.println("adding... ");
+         // Serial.println("adding... ");
           count++;
           bisSensLow = false;
       }
     }
     else
     {
-        Serial.println("setting to low... ");
+      //  Serial.println("setting to low... ");
         bisSensLow = true;
     }
 }
 
 void ResetCounter()
 {
-    Serial.println("reset eep... ");
-    for (unsigned int i = eep_addr; i < sizeof(long); ++i)
+  //  Serial.println("reset eep... ");
+  //if (!bisFreshStart)
+  //{
+      for (unsigned int i = eep_addr; i < sizeof(unsigned long); ++i)
+      {
+          EEPROM.write(i, 0);
+          
+      }
+      count = 0;
+      //}
+}
+
+void ManuallyResetCounter()
+{
+    //  Serial.println("reset eep... ");
+    // if (!bisFreshStart)
+    //{
+    if((digitalRead(reset)) == HIGH)
+    {
+        
+    for (unsigned int i = eep_addr; i < sizeof(unsigned long); ++i)
     {
         EEPROM.write(i, 0);
-        count = 0;
+    }
+    count = 0;
     }
 }
 
@@ -240,7 +268,7 @@ void DisplaySplash()
    
    
     //Serial.print("drawing... ");
-    for (int i = 0; i < 260; ++i)
+    for (int i = 0; i < 100; ++i)
     {
         //delay(1);
         for (int j = 2; j < 5; ++j)
@@ -355,7 +383,7 @@ void displayDigitOnSegment(int segNum,uint8_t num)
 
 }
 
-void zeroAllSegments()
+/* void zeroAllSegments()
 {
     digitalWrite(seg1, LOW);
     digitalWrite(seg2, LOW);
@@ -367,15 +395,15 @@ void zeroAllSegments()
     shiftOut(data, clock, LSBFIRST, digits[0]);
 
     delay(10); // A bit Delay.
-}
+} */
 
 void saveDataToEEPROM()
 {
-    //first, Check If count is Updated, To Prevent From EEPROM
+    //first, Check If count is Updated, To Prevent From EEPROM tiring.
     // Save Count To EEPROM.
-    long prevdata =0;
-     EEPROM.get(eep_addr,prevdata);
+   // long prevdata =0;
+     //EEPROM.get(eep_addr,prevdata);
 
-     if(count != prevdata)
+     //if(count != prevdata)
     EEPROM.put(eep_addr, count);
 }
