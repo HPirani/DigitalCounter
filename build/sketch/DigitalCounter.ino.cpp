@@ -429,3 +429,5 @@ void saveDataToEEPROM()
      //if(count != prevdata)
     EEPROM.put(eep_addr, count);
 }
+#line 1 "H:\\Arduino\\projects\\DigitalCounter\\counter_test.ino"
+

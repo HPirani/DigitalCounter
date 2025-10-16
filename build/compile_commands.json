@@ -56,73 +56,42 @@
    "-g",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial.cpp",
+   "-o",
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\HardwareSerial.cpp.o"
+  ],
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial.cpp"
+ },
+ {
+  "directory": "h:\\Arduino\\projects\\DigitalCounter",
+  "arguments": [
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++17",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-MMD",
+   "-mmcu=atmega8",
+   "-DF_CPU=8000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_ATmega8",
+   "-DARDUINO_ARCH_AVR",
+   "-Wextra",
+   "-flto",
+   "-g",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
    "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\CDC.cpp",
    "-o",
    "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\CDC.cpp.o"
   ],
   "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\CDC.cpp"
- },
- {
-  "directory": "h:\\Arduino\\projects\\DigitalCounter",
-  "arguments": [
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++17",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-MMD",
-   "-mmcu=atmega8",
-   "-DF_CPU=8000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_ATmega8",
-   "-DARDUINO_ARCH_AVR",
-   "-Wextra",
-   "-flto",
-   "-g",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial0.cpp",
-   "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\HardwareSerial0.cpp.o"
-  ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial0.cpp"
- },
- {
-  "directory": "h:\\Arduino\\projects\\DigitalCounter",
-  "arguments": [
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++17",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-MMD",
-   "-mmcu=atmega8",
-   "-DF_CPU=8000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_ATmega8",
-   "-DARDUINO_ARCH_AVR",
-   "-Wextra",
-   "-flto",
-   "-g",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial1.cpp",
-   "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\HardwareSerial1.cpp.o"
-  ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial1.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -211,11 +180,11 @@
    "-g",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial.cpp",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial0.cpp",
    "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\HardwareSerial.cpp.o"
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\HardwareSerial0.cpp.o"
   ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial.cpp"
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial0.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -242,11 +211,11 @@
    "-g",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\IPAddress.cpp",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial1.cpp",
    "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\IPAddress.cpp.o"
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\HardwareSerial1.cpp.o"
   ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\IPAddress.cpp"
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\HardwareSerial1.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -273,11 +242,11 @@
    "-g",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Print.cpp",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Stream.cpp",
    "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\Print.cpp.o"
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\Stream.cpp.o"
   ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Print.cpp"
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Stream.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -309,6 +278,37 @@
    "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\Tone.cpp.o"
   ],
   "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Tone.cpp"
+ },
+ {
+  "directory": "h:\\Arduino\\projects\\DigitalCounter",
+  "arguments": [
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++17",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-MMD",
+   "-mmcu=atmega8",
+   "-DF_CPU=8000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_ATmega8",
+   "-DARDUINO_ARCH_AVR",
+   "-Wextra",
+   "-flto",
+   "-g",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\IPAddress.cpp",
+   "-o",
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\IPAddress.cpp.o"
+  ],
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\IPAddress.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -515,11 +515,11 @@
    "-g",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Stream.cpp",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\new.cpp",
    "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\Stream.cpp.o"
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\new.cpp.o"
   ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Stream.cpp"
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\new.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -546,11 +546,39 @@
    "-g",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
    "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\new.cpp",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Print.cpp",
    "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\new.cpp.o"
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\Print.cpp.o"
   ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\new.cpp"
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\Print.cpp"
+ },
+ {
+  "directory": "h:\\Arduino\\projects\\DigitalCounter",
+  "arguments": [
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu11",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-MMD",
+   "-mmcu=atmega8",
+   "-DF_CPU=8000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_ATmega8",
+   "-DARDUINO_ARCH_AVR",
+   "-Wextra",
+   "-flto",
+   "-g",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\wiring.c",
+   "-o",
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\wiring.c.o"
+  ],
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\wiring.c"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -579,37 +607,6 @@
    "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\wiring_analog.c.o"
   ],
   "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\wiring_analog.c"
- },
- {
-  "directory": "h:\\Arduino\\projects\\DigitalCounter",
-  "arguments": [
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++17",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-MMD",
-   "-mmcu=atmega8",
-   "-DF_CPU=8000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_ATmega8",
-   "-DARDUINO_ARCH_AVR",
-   "-Wextra",
-   "-flto",
-   "-g",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\USBCore.cpp",
-   "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\USBCore.cpp.o"
-  ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\USBCore.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
@@ -663,34 +660,6 @@
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
   "arguments": [
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu11",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-MMD",
-   "-mmcu=atmega8",
-   "-DF_CPU=8000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_ATmega8",
-   "-DARDUINO_ARCH_AVR",
-   "-Wextra",
-   "-flto",
-   "-g",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
-   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
-   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\wiring.c",
-   "-o",
-   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\wiring.c.o"
-  ],
-  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\wiring.c"
- },
- {
-  "directory": "h:\\Arduino\\projects\\DigitalCounter",
-  "arguments": [
    "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
    "-c",
    "-g",
@@ -718,6 +687,37 @@
    "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\main.cpp.o"
   ],
   "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\main.cpp"
+ },
+ {
+  "directory": "h:\\Arduino\\projects\\DigitalCounter",
+  "arguments": [
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++17",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-MMD",
+   "-mmcu=atmega8",
+   "-DF_CPU=8000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_ATmega8",
+   "-DARDUINO_ARCH_AVR",
+   "-Wextra",
+   "-flto",
+   "-g",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles",
+   "-IC:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\variants\\standard",
+   "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\USBCore.cpp",
+   "-o",
+   "H:\\Arduino\\projects\\DigitalCounter\\build\\core\\USBCore.cpp.o"
+  ],
+  "file": "C:\\Users\\Hosein\\AppData\\Local\\Arduino15\\packages\\MiniCore\\hardware\\avr\\3.1.1\\cores\\MCUdude_corefiles\\USBCore.cpp"
  },
  {
   "directory": "h:\\Arduino\\projects\\DigitalCounter",
